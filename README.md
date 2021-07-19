@@ -2,7 +2,7 @@
 Hello there I hope you take a liking to my simple fullstack app
 It is written primaryly with a hybrid of TS, JS, Pure JS, HTML, and CSS in Angular with FontAwesome Icons & Angular Material imported scripts
 I took the liberty of hosting the application on a static AWS S3 Bucket for you
-    url: http://staxapp123.s3-website-us-east-1.amazonaws.com/
+- url: http://staxapp123.s3-website-us-east-1.amazonaws.com/
 
 When the app is loaded it runs an initial GET request for the items 
 in the catalog using an XMLHttpRequest along side the Auth Bearer Token.
