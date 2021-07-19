@@ -32,10 +32,8 @@ Design was inspired by the stax color scheme
 - justified-content OCD is real 
 - logo utilized from your cloudfront CDNdistribution
 
-The components attached are the bulk of what makes the app work
-Not included but available if needed 
-- routing module ( angular navigation for link pointing)
-- app module ( calling import modules)
+If you have any questions don't hesitate to ask!
+email: abaine16@gmail.com; cell phone: (561)-523-1992
 
 
 
