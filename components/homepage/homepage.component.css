@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.page{ overflow: none; font-family: 'Abel',sans-serif;}
+.hm{ min-width: 350px; width: 100%; min-height: 350px; height: 500px; overflow: auto; margin-top: 10px; display: flex; justify-content: center;}
+.hm_in{border-radius: 12px;border: 2px solid white;width: 98%;}
+.hd{ align-content: center; text-align: center; width: 100%; height: 200px; display: flex; justify-content: center;}
+.img{width: 150px; height: 75px; background-color: white; border-radius: 12px;}
+.cdab{margin-top: -120px; width: 100%; text-align: center; color: white;}
+.tg{font-size: 20px;color: white; margin-top: 10px;}.lt_in{margin: 5px; width: 75%; height: 75px; display: inline-flex; justify-content: left;}.ltr{width: 24%;display: inline-flex; justify-content: left;}
+.lt_btn{background-color: #151c47; color: white; width: 115px;height: 35px; margin-right: 10px;}.lt_btn:hover {background-color: white; color: #151c47}
+.lt_btn_s{background-color: #820b86; color: white; width: 200px;height: 35px; margin-right: 10px;border: none;}.lt_btn_s:hover {background: linear-gradient(90deg, rgba(68,65,65,1) 62%, rgba(130,11,134,1) 100%);color: white; border: 2px solid #151c47;}
+.sch{width: 150px; height: 35px; border-radius: 8px; outline: none; border: none; color: #151c47}.sch:focus{border:3px solid #151c47}
+.in{color: #151c47; border-bottom: 2px solid #151c47; cursor: pointer; width: 100%;height: 75px; }.in:hover{background-color: #151c47; color: white;}
+.modal {display: none;position: fixed; padding-top: 50px;top: 0;width: 100%;height: 100%; background-color: rgb(0, 0, 0);background-color: rgba(0, 0, 0, 0.5);z-index:2;}
+.modal-content {position: relative; background-color: white;border: 2px solid white;margin: auto; width: 75%; min-width: 375px;  height: 750px;border-radius: 12px;overflow: none;
+    -webkit-animation-name: animatetop;-webkit-animation-duration: 0.4s;animation-name: animatetop;animation-duration: 0.4s
+  }

@@ -1,0 +1,28 @@
+<div class="m_in">
+    <div style="font-size: 25px; margin-bottom: 50px;">Invoice Creation Form</div>
+        <div style="color: red; margin-bottom: 10px;">
+            <div style="display: none;" id="m_m">Missing Memo</div><br/>
+            <div style="display: none;" id="m_d">Missing Details</div><br/>
+            <div style="display: none;" id="m_q">Quantity cannot be submitted for 0</div><br/>
+            <div style="display: none;" id="m_p">Price Cannot be submitted at 0</div><br/>
+        </div>
+        <div style="color: #151c47; display: inline-block;"> <label >Memo</label> <textarea id="mem" type="text" class="inv_m" placeholder="Enter Memo Here"></textarea></div>
+        <div style="color: #151c47; display: inline-block; margin-right: 5px;"> <label for="d">Details</label> <textarea id="d" placeholder="Enter Details Here" class="inv_m"></textarea></div><br/>
+        <div style="width: 100%; margin-bottom: 20px;"></div>
+        <div style="color: #151c47; display: inline-block; margin-right: 20px;">Quantity <input id="q" value="0" class="inv" (keyup)='inv_t()'/></div>
+        <div style="color: #151c47; display: inline-block; margin-top: 10px;">Price<input id="p" value="0" class="inv" (keyup)="inv_t()"/></div>
+        <div style="margin-bottom: 20px;"></div>
+        <div style="color: #151c47; display: inline-block; font-size: 25px;">Total: <a id="t"></a></div> <div style="display: none;"><input id="tot"/></div>
+        <div style="width: 100%; margin-top: 50px;">
+            <button mat-button class="lt_btn_s" style="background-color: #820b86;" (click)='postInvoice()'>Submit Invoice <i class="fas fa-save"></i></button>
+        </div>
+        <div style="margin-top: 50px;">
+            <div id='view'>
+                <button mat-button class="lt_btn" routerLink="/invoice">Full Page View <i class="fas fa-external-link-square-alt"></i></button>
+            </div>
+        </div>
+        <div style="display: none;">
+            <input id="val"/><input id="val2"/><input id="val3"/><input id="val4"/>
+        </div>
+   
+</div>

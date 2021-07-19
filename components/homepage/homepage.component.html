@@ -1,0 +1,67 @@
+
+<mat-sidenav-container style="background-color: inherit; width: 100%; height: 100%;">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+       <div style="width: 100%; height: 100%; background-color: #151c47; color: white; ">
+        <button mat-button class="lt_btn_s" routerLink="/invoice">Create an Invoice <i class="fas fa-external-link-square-alt"></i></button>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content style="background-color: inherit; width: 100%; height: 100%;">
+        <button mat-button class="tg" (click)="sidenav.toggle()"><i class="fas fa-bars"></i></button><br/>
+        <div id="m" class="modal">
+            <div class="modal-content">
+                <button id="m_ex" mat-button style="width: 100%; color: black">Exit  <i class="fas fa-times"></i></button>
+                <app-add></app-add>
+            </div>
+        </div>
+        <div class="hd">
+            <div class="img"> 
+                <img width='150px' height="75px" 
+                src="https://d9hhrg4mnvzow.cloudfront.net/fattmerchant.com/ppc-payment-processing-lp/9b6e7f3a-stax-by-fm-brandmark-black-purplex.svg" alt=""/>
+            </div>
+        </div>
+        <div class="cdab"> Coding Challenge Executed <br/> by Alexander Baine</div>
+          <div class="hm">
+            <div class="hm_in">
+                <div class="lt_in" >
+                    <!-- Internal List Actions Directed to Modal Tab-->
+                    <button mat-raised-button id="b" class="lt_btn" matTooltip='Add New Items to List' (click)='modal()'><i class="fas fa-plus"></i> Add New</button>
+                    <button mat-raised-button id="b3" class="lt_btn" matTooltip='Refresh items list' (click)='ref()'><i class="fas fa-sync-alt"></i>   Refresh</button>
+                </div>
+                <!--Search with Autocomplete-->
+                 <div class="ltr">
+                    <form>
+                        <input id="auto" type="text" class="sch" placeholder="Search for an item" [formControl]="itm_form" [matAutocomplete]="auto">
+                        <mat-autocomplete #auto="matAutocomplete">
+                          <mat-option *ngFor="let itm of filteredItms | async" [value]="itm">
+                            {{itm}}
+                          </mat-option>
+                        </mat-autocomplete>
+                      </form>
+                 </div>
+                 <div style="font-size: 25px;width: 100%; text-align: center; color: white;">Current Items</div>
+                 <div style="width: 100%; background-color: #151c47; color: white; margin-top: 10px;text-align: center; font-size: 20px;white-space: nowrap; overflow: auto;">
+                    <div style="width: 19%;min-width:150px; border-right: 1px solid white; display: inline-block; ">Item Name</div>
+                    <div style="width: 19%;min-width:150px; border-right: 1px solid white;display: inline-block;">Price</div>
+                    <div style="width: 19%;min-width:150px; border-right: 1px solid white;display: inline-block;">Details</div>
+                    <div style="width: 40%;min-width:275px;display: inline-block;">Item ID</div>
+                </div>
+                 
+                 <div style="background-color: white; width: 100%; height: auto; overflow: auto;" id="inv"></div><br/>
+
+                 <div style="font-size: 25px;width: 100%; text-align: center; color: white;">Current Invoices</div>
+                 <div style="width: 100%; background-color: #151c47; color: white; margin-top: 10px;text-align: center; font-size: 20px;white-space: nowrap; overflow: auto;">
+                    <div style="width: 19%;min-width:150px; border-right: 1px solid white; display: inline-block; ">Item Name</div>
+                    <div style="width: 19%;min-width:150px; border-right: 1px solid white;display: inline-block;">Subtotal</div>
+                    <div style="width: 19%;min-width:150px; border-right: 1px solid white;display: inline-block;">Details</div>
+                    <div style="width: 40%;min-width:275px;display: inline-block;">Customer ID</div>
+                </div>
+                 <div style="background-color: white; width: 100%; height: auto; overflow: auto;" id="inv2"></div>
+
+            </div>
+           
+            </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<div style="display: none;">
+<input id="p_inv"/><input id="p_inv2"/><input id="p_inv3"/><input id="p_inv4"/>
+</div>
