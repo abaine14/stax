@@ -6,7 +6,7 @@ I took the liberty of hosting the application on a static AWS S3 Bucket for you
 
 When the app is loaded it runs an initial GET request for the items 
 in the catalog using an XMLHttpRequest along side the Auth Bearer Token.
-That returned the meeseeks and Meeseeks Box items."Happy about the Rick & Morty Reference" 
+That returned the meeseeks and Meeseeks Box items."Happy about the Rick & Morty Reference" <br/>
 How it works:
 Run a GET and use the response to create div elements after looping through the JSON array.
 Afterwards utilizing the for loop to create as many div/ destructured table elements as were
