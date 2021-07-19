@@ -32,6 +32,8 @@ Design was inspired by the stax color scheme
 - justified-content OCD is real 
 - logo utilized from your cloudfront CDNdistribution
 
+Bulk of the code is in components/add & components/homepage
+
 If you have any questions don't hesitate to ask!
 email: abaine16@gmail.com; cell phone: (561)-523-1992
 
